@@ -6,7 +6,7 @@ backend/backend/__pycache__
 backend/quizzes/__pycache__
 
 # Django
-backend/.env
+.env
 
 # dependencies
 node_modules/
