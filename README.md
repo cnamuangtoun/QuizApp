@@ -1,46 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Django and React Quiz Application
 
-## Available Scripts
+This repository contains a full-stack quiz application with a Django REST framework backend and a React frontend. The application supports various types of quiz questions and authenticates users, allowing them to take quizzes and view their scores.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Backend (Django REST Framework):**
+  - CRUD operations for quizzes, questions, and choices.
+  - Support for different question types: single choice, multiple choice, and text-based answers.
+  - User authentication and authorization.
+  - User quiz attempt tracking and scoring.
+  
+- **Frontend (React):**
+  - User authentication pages.
+  - List quizzes available for users to take.
+  - Present questions to the user and collect answers.
+  - Display user scores after submitting quizzes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Backend:** Django, Django REST Framework, Gunicorn, PostgreSQL
+- **Frontend:** React, Axios for API requests, Bootstrap for styling
+- **Deployment:** Heroku
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A step by step series of examples that tell you how to get a development environment running:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Setting up the Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd backend
+# Create a virtual environment
+python -m venv venv
+# Activate virtual environment
+source venv/bin/activate
+# Install dependencies
+pip install -r requirements.txt
+# Apply migrations
+python manage.py migrate
+# Run the development server
+python manage.py runserver
+```
 
-### `npm run eject`
+#### Setting up the Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+cd frontend
+# Install dependencies
+npm install
+# Start the development server
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
